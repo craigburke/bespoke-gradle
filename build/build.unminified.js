@@ -450,6 +450,7 @@ bespoke.from("article.deck", [
     bespoke.plugins.keys(),
     bespoke.plugins.hash(),
     bespoke.plugins.backdrop(),
+    bespoke.plugins.progress(),
     bespoke.plugins.bullets(),
     bespoke.plugins.backdrop()
 ]);
