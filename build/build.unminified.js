@@ -445,7 +445,7 @@ literal:"ip eip rip al ah bl bh cl ch dl dh sil dil bpl spl r8b r9b r10b r11b r1
 //= require_full_tree /bespoke/themes/
 //= require highlightjs/highlight.pack.min
 
-bespoke.from("#presentation", [
+bespoke.from("article.deck", [
     bespoke.themes.nebula(),
     bespoke.plugins.keys(),
     bespoke.plugins.hash(),
