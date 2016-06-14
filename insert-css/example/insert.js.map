@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"insert-css/example/insert.js",
+"lineCount":2,
+"mappings":"A;AAAA,IAAIA,GAAKC,OAAA,CAAQ,IAAR,CAAT,CACIC,UAAYD,OAAA,CAAQ,KAAR,CADhB,CAEIE,IAAMH,EAAAI,aAAA,CAAgBC,SAAhB,CAA4B,YAA5B,CACVH,UAAA,CAAUC,GAAV,CACAG,SAAAC,KAAAC,YAAA,CAA0BF,QAAAG,eAAA,CAAwB,mBAAxB,CAA1B;",
+"sources":["insert-css/example/insert.unminified.js"],
+"names":["fs","require","insertCss","css","readFileSync","__dirname","document","body","appendChild","createTextNode"]
+}

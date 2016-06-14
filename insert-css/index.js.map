@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"insert-css/index.js",
+"lineCount":2,
+"mappings":"A;AAAA,IAAIA,SAAW,EAEfC,OAAAC,QAAA,CAAiBC,QAAS,CAACC,CAAD,CAAMC,CAAN,CAAe,CACrC,GAAI,CAAAL,QAAA,CAASI,CAAT,CAAJ,CAAA,CACAJ,QAAA,CAASI,CAAT,CAAA,CAAgB,CAAA,CAEhB,KAAIE,EAAOC,QAAAC,cAAA,CAAuB,OAAvB,CACXF,EAAAG,aAAA,CAAkB,MAAlB,CAA0B,UAA1B,CAEI,cAAJ,EAAqBH,EAArB,CACEA,CAAAI,YADF,CACqBN,CADrB,CAGEE,CAAAK,WAAAC,QAHF,CAG4BR,CAG5B,KAAIS,EAAON,QAAAO,qBAAA,CAA8B,MAA9B,CAAA,CAAsC,CAAtC,CACPT,EAAJ,EAAeA,CAAAU,QAAf,CACIF,CAAAG,aAAA,CAAkBV,CAAlB,CAAwBO,CAAAI,WAAA,CAAgB,CAAhB,CAAxB,CADJ,CAGIJ,CAAAK,YAAA,CAAiBZ,CAAjB,CAhBJ,CADqC;",
+"sources":["insert-css/index.unminified.js"],
+"names":["inserted","module","exports","module.exports","css","options","elem","document","createElement","setAttribute","textContent","styleSheet","cssText","head","getElementsByTagName","prepend","insertBefore","childNodes","appendChild"]
+}
