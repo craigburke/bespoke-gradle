@@ -980,6 +980,7 @@ literal:"ip eip rip al ah bl bh cl ch dl dh sil dil bpl spl r8b r9b r10b r11b r1
         bespoke.plugins.state(),
         bespoke.plugins.hash(),
         bespoke.plugins.overview({margin: 300, title: true, numbers: true}),
+        bespoke.plugins.touch(),
         bespoke.plugins.backdrop(),
         bespoke.plugins.progress(),
         bespoke.plugins.fullscreen()
