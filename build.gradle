@@ -32,6 +32,7 @@ ext {
     asciidoctorConfig = [
         requires: [ 'asciidoctor-bespoke', 'asciidoctor-diagram' ],
         safe: 0,
+        docinfo1: true,
         backend: 'bespoke',
         gemPath: jruby.gemInstallDir.absolutePath,
         headerFooter: true,

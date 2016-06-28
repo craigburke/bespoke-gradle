@@ -17,12 +17,12 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
     - if attr? :appname
       meta name='application-name' content=(attr :appname)
     link rel='stylesheet' href='main.css'
-    =docinfo :header
+    =docinfo
   body id=id
     article.deck
       - unless noheader
         - if header?
           include slide_title.html.slim
       =content
-      =docinfo :footer
+    =docinfo :footer
     script src='main.js'
