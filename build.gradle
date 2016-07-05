@@ -28,20 +28,13 @@ apply plugin: 'com.github.jruby-gradle.base'
 ext {
     githubRepoUri = 'https://github.com/craigburke/bespoke-gradle.git'
     assetPath = file('src/assets').absolutePath
+    asciidocRoot = file("${assetPath}/asciidoc").absolutePath
     assetConfigFile = file('build/resources/main/assets.json')
     asciidoctorConfig = [
         requires: [ 'asciidoctor-bespoke', 'asciidoctor-diagram' ],
-        safe: 0,
-        docinfo1: true,
         backend: 'bespoke',
         gemPath: jruby.gemInstallDir.absolutePath,
-        headerFooter: true,
-        templateDirs: [
-            "${assetPath}/templates" as String
-        ],
-        attributes: [ icons: 'font',
-                      imagesoutdir: "${assetPath}/images" as String
-        ]
+        attributes: [ icons: 'font' ]
     ]
 }
 
@@ -106,6 +99,7 @@ githubPages {
 }
 
 task saveAssetConfig() {
+
     outputs.file assetConfigFile
     doLast {
         assetConfigFile.createNewFile()
@@ -117,8 +111,16 @@ task saveAssetConfig() {
 }
 
 run.dependsOn jrubyPrepare, saveAssetConfig
+assetCompile.dependsOn jrubyPrepare
 publishGhPages.dependsOn assetCompile
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.13'
+}
+
+clean {
+    doFirst {
+        delete '.asscache'
+    }
+    dependsOn 'assetClean'
 }

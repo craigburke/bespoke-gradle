@@ -14,9 +14,6 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
         - _favicon_image_type = 'x-icon'
       link rel='shortcut icon' href=_favicon_href type="image/#{_favicon_image_type}"
     meta name='mobile-web-app-capable' content='yes'
-    - if attr? :appname
-      meta name='application-name' content=(attr :appname)
-    link rel='stylesheet' href='main.css'
     =docinfo
   body id=id
     article.deck
@@ -25,4 +22,3 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
           include slide_title.html.slim
       =content
     =docinfo :footer
-    script src='main.js'

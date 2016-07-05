@@ -1,4 +1,4 @@
-== Some Groovy Code
+== Some Code
 
 [source,groovy]
 ----

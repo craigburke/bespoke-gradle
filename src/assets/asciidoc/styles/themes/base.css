@@ -35,6 +35,10 @@ figure.canvas {
     background-color: #000;
 }
 
+.bespoke-parent {
+    background: #FFF;
+}
+
 .deck section:not(.bespoke-slide), .deck:not(.bespoke-parent) {
     display: none;
 }
